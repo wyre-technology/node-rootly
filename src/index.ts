@@ -16,6 +16,9 @@ export * from './types/index.js';
 export { request } from './http.js';
 export type { RequestOptions } from './http.js';
 
+// Test utilities (tree-shakeable; only included when imported)
+export { _resetWriteWindow } from './rate-limiter.js';
+
 // Errors
 export {
   RootlyError, AuthenticationError, ForbiddenError, NotFoundError,

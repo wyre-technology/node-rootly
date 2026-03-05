@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/wyre-technology/node-rootly/compare/v1.0.0...v1.0.1) (2026-03-05)
+
+
+### Bug Fixes
+
+* **ci:** use jq for version extraction — avoid bash quoting issue with node -p require() ([2e3049c](https://github.com/wyre-technology/node-rootly/commit/2e3049cfcfcfd04b96d6db075487a6c27c7a43e3))
+
 # 1.0.0 (2026-03-05)
 
 

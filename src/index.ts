@@ -12,6 +12,10 @@ export { UsersResource } from './resources/users.js';
 // Types
 export * from './types/index.js';
 
+// Low-level HTTP (for adapters that need raw request access)
+export { request } from './http.js';
+export type { RequestOptions } from './http.js';
+
 // Errors
 export {
   RootlyError, AuthenticationError, ForbiddenError, NotFoundError,

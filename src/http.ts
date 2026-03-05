@@ -25,9 +25,11 @@ async function handleResponse<T>(res: Response): Promise<T> {
   try { responseBody = JSON.parse(rawText); }
   catch { responseBody = rawText; }
 
-  const detail =
-    (responseBody as Record<string, unknown>)?.errors?.[0]?.detail as string ??
-    (responseBody as Record<string, unknown>)?.error as string ??
+  const body = responseBody as Record<string, unknown>;
+  const errors = body?.errors as Array<Record<string, unknown>> | undefined;
+  const detail: string =
+    (errors?.[0]?.detail as string) ??
+    (body?.error as string) ??
     rawText;
 
   switch (res.status) {

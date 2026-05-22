@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/wyre-technology/node-rootly/compare/v1.0.1...v1.0.2) (2026-05-22)
+
+
+### Bug Fixes
+
+* add files field to ensure dist/ is included in npm publish ([4d76e93](https://github.com/wyre-technology/node-rootly/commit/4d76e93adb9b71badbd35f9382c29b2f9265dbd3))
+
 ## [1.0.1](https://github.com/wyre-technology/node-rootly/compare/v1.0.0...v1.0.1) (2026-03-05)
 
 
